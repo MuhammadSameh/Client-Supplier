@@ -1,0 +1,30 @@
+<div class="d-flex align-items-center justify-content-center" style="height: 100vh">
+  <form (ngSubmit)="register()" style="width: 30vw">
+    <div class="mb-3">
+      <label for="UserName" class="form-label">Username</label>
+      <input type="text" class="form-control" name="Username" [(ngModel)]="registerData.userName">
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Email address</label>
+      <input type="email" class="form-control" name="exampleInputEmail1" [(ngModel)]="registerData.email">
+    </div>
+  
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Password</label>
+      <input type="password" class="form-control" name="exampleInputPassword1" [(ngModel)]="registerData.password">
+    </div>
+  
+    <div class="mb-3">
+      <label for="exampleInputPassword2" class="form-label">Password Confirmation</label>
+      <input type="password" class="form-control" name="exampleInputPassword2" [(ngModel)]="registerData.passwordConfirmation">
+    </div>
+    <div class="mb-3">
+      <label for="Address" class="form-label">Address</label>
+      <input type="text" class="form-control" name="Address" [(ngModel)]="registerData.address">
+    </div>
+  
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
+
+

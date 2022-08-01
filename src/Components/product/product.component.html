@@ -1,0 +1,26 @@
+<div class="card h-100 shadow-sm">
+  <a href="#">
+    <img [src]="product.medias[0]" class="card-img-top" alt="product.title" />
+  </a>
+
+
+  <div class="card-body">
+    <div class="clearfix mb-3">
+      <span class="float-start badge rounded-pill bg-success">{{product.price}} EGP</span>
+    </div>
+
+    <h5 class="card-title">
+      <a target="_blank" href="#">{{product.product.description}}</a>
+    </h5>
+
+    <div class="d-grid gap-2 my-2">
+
+      <a [routerLink]="['/Variation', product.productId]" class="btn btn-warning bold-btn">add variation</a>
+
+    </div>
+    <a (click)="Delete(product.inventoryId)" class="btn btn-danger bold-btn">Delete</a>
+    <a (click)="Update()" class="m-1 btn btn-info bold-btn">Update</a>
+    
+
+  </div>
+</div>
